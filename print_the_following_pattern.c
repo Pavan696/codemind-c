@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,n1=1;
+    int n,i,j;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        for(j=1;j<(2*n)+1;j++)
+        for(j=1;j<=n;j++)
+        
         {
-            if((j==1)||(j==2*n-1)||(j==n1))
+            if(j==i)
             {
-                printf("*");
+                printf("0");
             }
             else
             {
-                printf(" ");
+                printf("x");
             }
         }
-        n1=n1+2;
         printf("
 ");
     }
