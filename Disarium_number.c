@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,d,sum=0,temp,arr[100],i,dc=0,j,k;
+    scanf("%d",&n);
+    temp=n;
+    while(n!=0)
+    {
+        d=n%10;
+        arr[i]=d;
+        n=n/10;
+        i++;
+    }
+    n=temp;
+    j=i;
+    for(k=0;k<j;k++)
+    {
+        sum=sum+pow(arr[k],i);
+        i--;
+    }
+    if(sum==n)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
